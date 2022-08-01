@@ -23,7 +23,7 @@ header {
     align-items: center;
 }
 .banner {
-    height: 110vh;
+    height: 100vh;
     background: url(images/bg.jpg) no-repeat center / cover;
     display: flex;
     justify-content: center;
@@ -41,7 +41,7 @@ header {
 }
 .banner::before {
     content: "";
-    background-color: #0005;
+    background-color: #0004;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -68,6 +68,9 @@ header {
     padding-left: calc(50% - 500px);
     padding-right: calc(50% - 500px);
 }
+.animate__backInDown {
+    --animate-duration: 2s; 
+}
 
 @media (min-width: 600px) and (max-width: 1099px) {
     .container {
@@ -80,6 +83,7 @@ header {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
 
 @media (max-width: 599px) {
     .container {
